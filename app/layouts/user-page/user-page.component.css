@@ -1,0 +1,27 @@
+input{
+    width: 40%;
+}
+
+button{
+    background-color: rgb(10, 192, 55);
+    border-color: black;
+}
+
+img{
+    width: 300px;
+}
+
+p[class= "description"]{
+    font-weight: lighter;
+    width:800px; 
+    margin:auto;
+    text-align: center;
+}
+
+h6{
+    font-size: 55px;
+    font-weight: lighter;
+    width:800px; 
+    margin:auto;
+    text-align: center;
+}

@@ -1,0 +1,39 @@
+<a class="navbar-brand" href="Homepage" style="display: flex; align-items: center; font-size: 22px;">
+  <img src="https://th.bing.com/th/id/OIP.puwsv-VMA1yJ6ao0pGPa2wHaFD?pid=ImgDet&w=820&h=560&rs=1" width="50" height="50" style="border-radius: 60px" class="d-inline-block align-top" alt="">
+  StockMarketSim
+</a>
+
+<h1>Create an account</h1>
+
+<form id = "box"
+  style="margin: auto; width: 40%; padding: 10px"
+  #loginForm="ngForm"
+  (ngSubmit)="createAccount()"
+>
+  <div class="form-outline mb-4">
+    <input [(ngModel)]="email" class="form-control" name="email" ngModel />
+    <label class="form-label" for="form">Email</label>
+  </div>
+
+  <div class="form-outline mb-4">
+    <input
+      type="password"
+      class="form-control"
+      name="password"
+      [(ngModel)]="password"
+      ngModel
+    />
+    <label class="form-label" for="form">Password</label>
+  </div>
+  <div class="button">
+    <button type="submit" class="btn btn-primary btn-block mb-4">
+      Create Account
+    </button>
+  </div>
+  <div class="text-center">
+    <p href="#!">Already Have an Account?</p>
+    <button type="button" class="btn btn-primary btn-block mb-4" routerLink="">
+      Sign In
+    </button>
+  </div>
+</form>
